@@ -1,5 +1,6 @@
 
 import { BrowserRouter,Link,Route,Router,Routes } from "react-router-dom"
+import {logos} from './assets/logos.png'
 function App() {
   
   
