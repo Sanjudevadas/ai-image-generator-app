@@ -1,16 +1,21 @@
 
 import { BrowserRouter,Link,Route,Router,Routes } from "react-router-dom"
-import {logos} from './assets/logos.png'
+import me from './assets/me.png'
+import { Home,CreatePost } from "./pages"
 function App() {
   
   
 
   return (
-   <div>
-    <h1 className="text-3xl font-bold underline">
-      Hello world
-    </h1>
-   </div>
+    <BrowserRouter>
+    <header className="w-full flex justify-between items-center bg-white  sm:px-8 py-4 border-b-[#e6ebf4]">
+     <Link to="/">
+     <img src={me} alt="logo" className="w-28 object-contain" />
+     </Link>
+    </header>
+
+    </BrowserRouter>
+   
   )
 }
 
